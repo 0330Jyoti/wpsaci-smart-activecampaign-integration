@@ -38,14 +38,14 @@
             </td>
         </tr>
 
-        <!-- Zoho Modules Row -->
+        <!-- ActiveCampaign Modules Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
-                <label><?php echo  esc_html__( 'Zoho Modules', 'wpsaci-smart-activecampaign' ); ?></label>
+                <label><?php echo  esc_html__( 'ActiveCampaign Modules', 'wpsaci-smart-activecampaign' ); ?></label>
             </th>
             <td class="forminp forminp-text">
                 <select name="activecampaign_module">
-                    <option><?php echo  esc_html__('Select Zoho Module', 'wpsaci-smart-activecampaign'); ?></option>
+                    <option><?php echo  esc_html__('Select ActiveCampaign Module', 'wpsaci-smart-activecampaign'); ?></option>
                     <?php
                         $activecampaign_modules_options = "";
 
@@ -65,19 +65,19 @@
             </td>
         </tr>
 
-        <!-- Zoho Fields Row -->
+        <!-- ActiveCampaign Fields Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
-                <label><?php echo  esc_html__( 'Zoho Fields', 'wpsaci-smart-activecampaign' ); ?></label>
+                <label><?php echo  esc_html__( 'ActiveCampaign Fields', 'wpsaci-smart-activecampaign' ); ?></label>
             </th>
             <td class="forminp forminp-text">
                 <select name="activecampaign_field">
-                    <option><?php echo  esc_html__('Please select Zoho Modules', 'wpsaci-smart-activecampaign'); ?></option>
+                    <option><?php echo  esc_html__('Please select ActiveCampaign Modules', 'wpsaci-smart-activecampaign'); ?></option>
                 </select>
             </td>
         </tr>
 
-        <!-- Zoho Modules Row -->
+        <!-- ActiveCampaign Modules Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
                 <label><?php echo  esc_html__( 'Status', 'wpsaci-smart-activecampaign' ); ?></label>
@@ -90,7 +90,7 @@
             </td>
         </tr>
 
-        <!-- Zoho Modules Row -->
+        <!-- ActiveCampaign Modules Row -->
         <tr valign="top">
             <th scope="row" class="titledesc">
                 <label><?php echo esc_html__( 'Description', 'wpsaci-smart-activecampaign' ); ?></label>

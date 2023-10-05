@@ -87,15 +87,15 @@ class WPSACI_Smart_ActiveCampaign_Admin {
 
             switch ( $_REQUEST['wp_module_name'] ) {
                 case 'customers':
-                    $wp_fields = WPSACI_Smart_Zoho::get_customer_fields();
+                    $wp_fields = WPSACI_Smart_ActiveCampaign::get_customer_fields();
                     break;
 
                 case 'orders':
-                    $wp_fields = WPSACI_Smart_Zoho::get_order_fields();
+                    $wp_fields = WPSACI_Smart_ActiveCampaign::get_order_fields();
                     break;
 
                 case 'products':
-                    $wp_fields = WPSACI_Smart_Zoho::get_product_fields();
+                    $wp_fields = WPSACI_Smart_ActiveCampaign::get_product_fields();
                     break;
 
                 default:
@@ -123,11 +123,11 @@ class WPSACI_Smart_ActiveCampaign_Admin {
 
        if( isset($_REQUEST['activecampaign_module_name']) ){
             $activecampaign_module    = $_REQUEST['activecampaign_module_name'];
-                $activecampaign_api_obj   = new WPSACI_Smart_Zoho_API();
+                $activecampaign_api_obj   = new WPSACI_Smart_ActiveCampaign_API();
                 $activecampaign_fields    = $activecampaign_api_obj->getFieldsMetaData($activecampaign_module);
        }
        
-       $activecampaign_fields_options = "<option>".esc_html__('Select Zoho Fields', 'wpsaci-smart-activecampaign')."</option>";
+       $activecampaign_fields_options = "<option>".esc_html__('Select ActiveCampaign Fields', 'wpsaci-smart-activecampaign')."</option>";
        
        if($activecampaign_fields){
             foreach ($activecampaign_fields['fields'] as $activecampaign_field_key => $activecampaign_field_data) {

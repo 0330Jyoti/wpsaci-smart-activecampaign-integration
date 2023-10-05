@@ -21,7 +21,7 @@ class WPSACI_Smart_ActiveCampaign_Admin_Settings {
             
             if ( $client_id && $client_secret ) {
                 $redirect_uri = esc_url(WPSACI_REDIRECT_URI);
-                $redirect_url = "$wpsaci_smart_activecampaign_data_center/oauth/v2/auth?client_id=$client_id&redirect_uri=$redirect_uri&response_type=code&scope=ZohoCRM.modules.all,ZohoCRM.settings.all&access_type=offline";
+                $redirect_url = "$wpsaci_smart_activecampaign_data_center/oauth/v2/auth?client_id=$client_id&redirect_uri=$redirect_uri&response_type=code&scope=ActiveCampaignCRM.modules.all,ActiveCampaignCRM.settings.all&access_type=offline";
                 if ( wp_redirect( $redirect_url ) ) {
 				    exit;
 				}

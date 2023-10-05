@@ -30,22 +30,22 @@ class WPSACI_Smart_ActiveCampaign_Admin_Synchronization {
                 
                 case 'products':
                     
-                    $WPSACI_Smart_Zoho_Public = new WPSACI_Smart_Zoho_Public();
-                    $WPSACI_Smart_Zoho_Public->addProductToZoho( $id );
+                    $WPSACI_Smart_ActiveCampaign_Public = new WPSACI_Smart_ActiveCampaign_Public();
+                    $WPSACI_Smart_ActiveCampaign_Public->addProductToActiveCampaign( $id );
 
                     break;
 
                 case 'orders':
                     
-                    $WPSACI_Smart_Zoho_Public = new WPSACI_Smart_Zoho_Public();
-                    $WPSACI_Smart_Zoho_Public->addOrderToZoho( $id );
+                    $WPSACI_Smart_ActiveCampaign_Public = new WPSACI_Smart_ActiveCampaign_Public();
+                    $WPSACI_Smart_ActiveCampaign_Public->addOrderToActiveCampaign( $id );
 
                     break;
 
                 case 'customers':
                     
-                    $WPSACI_Smart_Zoho_Public = new WPSACI_Smart_Zoho_Public();
-                    $WPSACI_Smart_Zoho_Public->addUserToZoho( $id );
+                    $WPSACI_Smart_ActiveCampaign_Public = new WPSACI_Smart_ActiveCampaign_Public();
+                    $WPSACI_Smart_ActiveCampaign_Public->addUserToActiveCampaign( $id );
 
                     break;    
                 

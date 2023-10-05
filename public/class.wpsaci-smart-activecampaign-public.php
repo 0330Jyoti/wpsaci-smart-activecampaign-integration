@@ -10,23 +10,23 @@ class WPSACI_Smart_ActiveCampaign_Public {
 
 
     private function loadCustomerAction() {
-        add_action( 'user_register', array($this, 'addUserToZoho') );
-        add_action( 'profile_update', array($this, 'addUserToZoho'), 10, 1 );
-        add_action( 'woocommerce_update_customer', array($this, 'addUserToZoho'), 10, 1 );
+        add_action( 'user_register', array($this, 'addUserToActiveCampaign') );
+        add_action( 'profile_update', array($this, 'addUserToActiveCampaign'), 10, 1 );
+        add_action( 'woocommerce_update_customer', array($this, 'addUserToActiveCampaign'), 10, 1 );
     }
 
 
     private function loadOrderAction() {
-        add_action( 'save_post', array( $this, 'addOrderToZoho' ), 10, 1 );
-        add_action('woocommerce_thankyou', array( $this, 'addOrderToZoho' ), 10, 1);
+        add_action( 'save_post', array( $this, 'addOrderToActiveCampaign' ), 10, 1 );
+        add_action('woocommerce_thankyou', array( $this, 'addOrderToActiveCampaign' ), 10, 1);
     }
 
 
     private function loadProductAction() {
-        add_action( 'woocommerce_update_product', array( $this, 'addProductToZoho' ), 10, 1 );
+        add_action( 'woocommerce_update_product', array( $this, 'addProductToActiveCampaign' ), 10, 1 );
     }
 
-    public function addUserToZoho( $user_id ){
+    public function addUserToActiveCampaign( $user_id ){
         global $wpdb;
         $data       = array();
         $user_info  = get_userdata($user_id);
@@ -68,7 +68,7 @@ class WPSACI_Smart_ActiveCampaign_Public {
     }
 
 
-    public function addOrderToZoho( $order_id ){
+    public function addOrderToActiveCampaign( $order_id ){
         global $wpdb, $post_type; 
         $data       = array();
 
@@ -113,7 +113,7 @@ class WPSACI_Smart_ActiveCampaign_Public {
     }
 
 
-    public function addProductToZoho( $post_id ){
+    public function addProductToActiveCampaign( $post_id ){
         global $wpdb, $post_type, $data; 
         $data = array();
 
@@ -175,7 +175,7 @@ class WPSACI_Smart_ActiveCampaign_Public {
             $smart_activecampaign_relation = array();
         }
 
-        $activecampaign_api_obj   = new WPSACI_Smart_Zoho_API();
+        $activecampaign_api_obj   = new WPSACI_Smart_ActiveCampaign_API();
         
         foreach ($data as $activecampaign_module => $activecampaign_data) {
             

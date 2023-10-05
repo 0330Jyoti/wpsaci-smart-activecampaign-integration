@@ -103,7 +103,7 @@ class WPSACI_Smart_ActiveCampaign_Field_Mappings {
         $wp_module 		= isset($_GET['wp_module']) ? sanitize_text_field($_GET['wp_module']) : false;
         $activecampaign_module 	= isset($_GET['activecampaign_module']) ? sanitize_text_field($_GET['activecampaign_module']) : false;
 
-        $smart_activecampaign_obj = new WPSACI_Smart_Zoho();
+        $smart_activecampaign_obj = new WPSACI_Smart_ActiveCampaign();
         $wp_modules 	= $smart_activecampaign_obj->get_wp_modules();
         $getListModules = $smart_activecampaign_obj->get_activecampaign_modules();
         

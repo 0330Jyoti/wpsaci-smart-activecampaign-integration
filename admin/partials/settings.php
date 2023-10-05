@@ -136,7 +136,7 @@
 
 		<?php }else if( isset($tab) && 'synch_settings' == $tab ){ ?>
 			<?php 
-				$smart_activecampaign_obj   = new WPSACI_Smart_Zoho();
+				$smart_activecampaign_obj   = new WPSACI_Smart_ActiveCampaign();
 		        $wp_modules 	= $smart_activecampaign_obj->get_wp_modules();
 		        $getListModules = $smart_activecampaign_obj->get_activecampaign_modules();
 			?>
@@ -149,7 +149,7 @@
 					            	foreach ($wp_modules as $wp_module_key => $wp_module_name) {
 					            		?>
 						            		<tr>
-												<th scope="row"><label><?php echo esc_html__( "Enable {$wp_module_key} to Zoho {$singleModule['api_name']} Sync", 'wpsaci-smart-activecampaign' ); ?></label></th>
+												<th scope="row"><label><?php echo esc_html__( "Enable {$wp_module_key} to ActiveCampaign {$singleModule['api_name']} Sync", 'wpsaci-smart-activecampaign' ); ?></label></th>
 												<td>
 													<fieldset>
 														<label>

@@ -5,7 +5,7 @@ class GetListofModules{
         $url = WPSACI_ACTIVECAMPAIGN_URL."/crm/v2/settings/modules";
         
         $curl = curl_init();
-        $authtoken = array('Authorization: Zoho-oauthtoken '.$token->access_token);
+        $authtoken = array('Authorization: ActiveCampaign-oauthtoken '.$token->access_token);
         curl_setopt_array($curl, array(
           CURLOPT_URL => $url,
           CURLOPT_RETURNTRANSFER => true,

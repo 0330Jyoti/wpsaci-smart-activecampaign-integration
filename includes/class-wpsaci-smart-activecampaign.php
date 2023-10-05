@@ -37,7 +37,7 @@ class WPSACI_Smart_ActiveCampaign {
 
 	public function get_activecampaign_modules(){
 
-		$activecampaign_api_obj   = new WPSACI_Smart_Zoho_API();
+		$activecampaign_api_obj   = new WPSACI_Smart_ActiveCampaign_API();
        
         /*get list modules*/
         $getListModules = $activecampaign_api_obj->getListModules();
@@ -214,7 +214,7 @@ class WPSACI_Smart_ActiveCampaign {
     public function store_required_field_mapping_data(){
 
         global $wpdb;
-        $activecampaign_api_obj   = new WPSACI_Smart_Zoho_API();
+        $activecampaign_api_obj   = new WPSACI_Smart_ActiveCampaign_API();
         $wp_modules     = $this->get_wp_modules();
         $getListModules = $this->get_activecampaign_modules();
 

@@ -7,8 +7,8 @@
     <table id="mapping-list-table" class="wp-list-table widefat fixed striped table-view-list display">
         <thead>
             <th><?php echo esc_html__('Id', 'wpsaci-smart-activecampaign'); ?></th>
-            <th><?php echo esc_html__('Zoho Module', 'wpsaci-smart-activecampaign'); ?></th>
-            <th><?php echo esc_html__('Zoho Field', 'wpsaci-smart-activecampaign'); ?></th>
+            <th><?php echo esc_html__('ActiveCampaign Module', 'wpsaci-smart-activecampaign'); ?></th>
+            <th><?php echo esc_html__('ActiveCampaign Field', 'wpsaci-smart-activecampaign'); ?></th>
             <th><?php echo esc_html__('WP Module', 'wpsaci-smart-activecampaign'); ?></th>
             <th><?php echo esc_html__('WP Field', 'wpsaci-smart-activecampaign'); ?></th>
             <th><?php echo esc_html__('Status', 'wpsaci-smart-activecampaign'); ?></th>
@@ -18,8 +18,8 @@
 
         <tfoot>
             <th><?php echo esc_html__('Id', 'wpsaci-smart-activecampaign'); ?></th>
-            <th><?php echo esc_html__('Zoho Module', 'wpsaci-smart-activecampaign'); ?></th>
-            <th><?php echo esc_html__('Zoho Field', 'wpsaci-smart-activecampaign'); ?></th>
+            <th><?php echo esc_html__('ActiveCampaign Module', 'wpsaci-smart-activecampaign'); ?></th>
+            <th><?php echo esc_html__('ActiveCampaign Field', 'wpsaci-smart-activecampaign'); ?></th>
             <th><?php echo esc_html__('WP Module', 'wpsaci-smart-activecampaign'); ?></th>
             <th><?php echo esc_html__('WP Field', 'wpsaci-smart-activecampaign'); ?></th>
             <th><?php echo esc_html__('Status', 'wpsaci-smart-activecampaign'); ?></th>
